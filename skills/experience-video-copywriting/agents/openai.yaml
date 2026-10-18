@@ -1,0 +1,4 @@
+interface:
+  display_name: "口播稿skill"
+  short_description: "从真实案例提炼传播机制，写职业体验、工具实测与过程教学文案"
+  default_prompt: "使用 $experience-video-copywriting，把我提供的素材写成有疑问、实操和结果的体验验证口播稿。"

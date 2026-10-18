@@ -1,0 +1,1 @@
+{"name":"afeng-video-retrospective","private":true,"version":"1.0.0","type":"module","scripts":{"check":"node tools/validate.mjs","start":"node tools/serve.mjs"}}

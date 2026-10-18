@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "interval_convention": "start_inclusive_end_exclusive",
+  "frame_index_base": 0,
+  "source": {"path": null, "sha256": null, "fps": null, "dimensions": null},
+  "target": {"fps": null, "dimensions": null},
+  "mechanism_id": null,
+  "layers": [
+    {
+      "id": "",
+      "motion_owner": null,
+      "motion_owner_options": ["source_footage", "composition_camera", "graphic", "text"],
+      "parent_id": null,
+      "asset_match": null,
+      "source_keyframes_measured": [],
+      "implementation_keyframes": [],
+      "measurement_status": "unmeasured",
+      "easing_fit_status": "unknown_author_settings",
+      "stable_read_interval": null,
+      "differences": []
+    }
+  ],
+  "transition": {"a_last_clear_frame": null, "mixed_interval": null, "b_first_stable_frame": null, "observed_type": null, "implementation_type": null},
+  "audio": {"original_cues": [], "asr_only": false, "listening_verified": false},
+  "review": {"native_comparison_frames": [], "studio_playback_observed": false, "export_current_version_approved": false}
+}

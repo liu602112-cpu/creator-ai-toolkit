@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 热点内容工作流"
+  short_description: "核验 AI 热点，分类积累参考图，制作小红书五图与公众号内容"
+  default_prompt: "使用 $ai-hot-publisher 处理这次 AI 热点内容，保存新参考图，并从对应平台图库选择适合选题的风格。"

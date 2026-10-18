@@ -1,0 +1,7 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {calculateBMR,calculateTDEE,getActivityFactor,validateInput}=require('../dist/calculator.js');
+const base={sex:'male',age:30,height:175,weight:70,bodyFat:''};
+test('两种性别及体脂率公式',()=>{assert.equal(calculateBMR(base),1648.75);assert.equal(calculateBMR({...base,sex:'female'}),1482.75);assert.equal(calculateBMR({...base,bodyFat:20}),1579.6000000000001);assert.equal(calculateBMR({...base,bodyFat:20,sex:'female'}),calculateBMR({...base,bodyFat:20}));assert.equal(calculateBMR({...base,bodyFat:' '}),1648.75);});
+test('文档全部 16 组活动系数',()=>{const expected=[[1.2,1.3,1.4,1.5],[1.3,1.4,1.5,1.6],[1.45,1.55,1.65,1.75],[1.6,1.7,1.8,1.9]];expected.forEach((row,w)=>row.forEach((factor,f)=>assert.equal(getActivityFactor(w,f),factor)));assert.equal(calculateTDEE(1648.75,getActivityFactor(0,2)),2308.25);});
+test('数据范围、必填项及异常数值',()=>{for(const [key,min,max] of [['age',18,80],['height',120,230],['weight',30,250],['bodyFat',3,60]]){for(const value of [min,max])assert.deepEqual(validateInput({...base,[key]:value}),{});for(const value of [min-1,max+1,NaN,Infinity,'abc',true])assert.ok(validateInput({...base,[key]:value})[key]);}for(const key of ['age','height','weight'])assert.ok(validateInput({...base,[key]:''})[key]);assert.ok(validateInput({...base,age:22.5}).age);assert.ok(validateInput({...base,sex:''}).sex);for(const value of ['',null,-1,4,0.5,NaN])assert.throws(()=>getActivityFactor(value,0));assert.throws(()=>calculateBMR({...base,weight:0}));});

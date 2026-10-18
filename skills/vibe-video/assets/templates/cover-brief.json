@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "",
+  "one_glance_story": "",
+  "left_or_earlier_subject": null,
+  "right_or_later_subject": null,
+  "comparison_basis": "",
+  "main_title": "",
+  "subtitle": null,
+  "verified_dates_and_numbers": [],
+  "identity_mark": null,
+  "color_roles": {},
+  "variants": [
+    {"id":"portrait","aspect_ratio":null,"width":null,"height":null,"asset_ids":[],"subject_framing":null,"divider":null,"title_clear_area":null,"small_screen_check":false},
+    {"id":"landscape","aspect_ratio":null,"width":null,"height":null,"asset_ids":[],"subject_framing":null,"divider":null,"title_clear_area":null,"small_screen_check":false}
+  ],
+  "production_requested": false,
+  "approved_content": false
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频选题编辑"
+  short_description: "结合你的受众、真实需求和素材，筛选具体选题并给出可拍的内容方案"
+  default_prompt: "用 $content-topic-planner 结合我的账号方向和现有素材筛选5个具体选题，推荐先拍哪一个，并说明依据和内容提纲。"

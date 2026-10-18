@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "time_unit": "frames",
+  "interval_convention": "start_inclusive_end_exclusive",
+  "fps": null,
+  "shots": [
+    {
+      "id": "S01",
+      "start_frame": null,
+      "end_frame": null,
+      "narrative_job": "",
+      "factor_ids": [],
+      "script_or_audio_cue": "",
+      "reference": {"source_id": null, "start_seconds": null, "end_seconds": null},
+      "visual_job": {"role": null, "must_show": "", "evidence_or_illustration": null},
+      "asset_ids": [],
+      "main_object": {"id": "", "initial_state": "", "final_state": ""},
+      "composition": {"subject_anchor_normalized": null, "subject_scale": null, "caption_safe_area": null},
+      "camera": {"start": null, "end": null, "easing_reason": ""},
+      "phases": {"enter": null, "hold_read": null, "emphasize": null, "exit": null},
+      "ambient_motion": [],
+      "labels_and_captions": [],
+      "incoming_anchor": null,
+      "outgoing_anchor": null,
+      "transition_id": null,
+      "audio_plan": {"source": null, "cues": [], "listening_verified": false},
+      "acceptance": {"check_frames": [], "expected_observation": "", "status": "unchecked"}
+    }
+  ]
+}

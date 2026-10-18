@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "style": "vibe-video",
+  "title": "",
+  "mode": "original",
+  "audience": "",
+  "viewer_takeaway": "",
+  "narrative_question": "",
+  "structure_id": null,
+  "source_script_or_srt": null,
+  "spec": {"duration_seconds": null, "fps": null, "width": null, "height": null},
+  "reference_selection": [],
+  "selected_factor_ids": [],
+  "motif": {"object_or_action": null, "opening_meaning": null, "middle_variations": [], "closing_new_meaning": null},
+  "color_roles": {"background": null, "subject": null, "information": null, "emphasis": null, "emotional_shift": null},
+  "caption_rule_source": null,
+  "evidence_to_verify": [],
+  "missing_assets_or_fonts": [],
+  "scope_exclusions": [],
+  "review": {"studio_url": null, "version": null, "playback_verified": false, "final_mp4_approved": false}
+}

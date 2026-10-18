@@ -1,0 +1,4 @@
+interface:
+  display_name: "文案教练"
+  short_description: "根据真实素材生成与修改文案，支持口播、科普、故事、图文和转化表达"
+  default_prompt: "使用 $copywriting-coach 根据我的主题、素材或原稿，直接生成或修改一份可用的文案。"

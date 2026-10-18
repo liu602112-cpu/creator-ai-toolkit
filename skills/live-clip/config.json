@@ -1,0 +1,10 @@
+{
+  "_说明": "Windows v3 设置：audience 填当前账号受众；audience_example 仅为源作者示例。feishu 留空表示未配置，使用发布包工作流时再根据用户要求填入目标表。安装本身不建表、不写入飞书。",
+  "feishu": {
+    "base_token": "",
+    "table_id": "",
+    "view_id": ""
+  },
+  "audience": "",
+  "audience_example": "25–40 岁、非技术背景、职场焦虑、想借 AI 转行 / 涨薪的普通人"
+}

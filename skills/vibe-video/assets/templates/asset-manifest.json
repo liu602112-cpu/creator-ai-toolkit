@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "A01",
+      "type": null,
+      "visual_job": "",
+      "evidence_role": null,
+      "source_page": null,
+      "creator_or_institution": null,
+      "source_date_or_era": null,
+      "rights_status": null,
+      "identity_and_event_check": {"claim": "", "supporting_source": null, "status": "unchecked"},
+      "original_path": null,
+      "project_copy": null,
+      "sha256": null,
+      "source_dimensions": null,
+      "source_fps": null,
+      "selected_range_seconds": null,
+      "crop_and_focal_point": null,
+      "inspected_original": false,
+      "audio_auditioned": false,
+      "reference_match": "unassessed",
+      "replacement_notes": null
+    }
+  ]
+}

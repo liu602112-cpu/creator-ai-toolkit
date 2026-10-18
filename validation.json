@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-19",
+  "items": 15,
+  "skills": 10,
+  "passed": 43,
+  "failed": 0,
+  "boundaries": [
+    "The Hifly skill was checked without uploading personal media or creating a paid generation task.",
+    "Skill checks validate packaging, retrieval and local tools, not guaranteed content performance.",
+    "Online pages are checked after deployment."
+  ],
+  "tests": [
+    {
+      "name": "skill-content-topic-planner",
+      "status": "passed"
+    },
+    {
+      "name": "skill-video-opening-coach",
+      "status": "passed"
+    },
+    {
+      "name": "skill-copywriting-coach",
+      "status": "passed"
+    },
+    {
+      "name": "skill-experience-video-copywriting",
+      "status": "passed"
+    },
+    {
+      "name": "skill-ai-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "skill-fitness-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "skill-vibe-video",
+      "status": "passed"
+    },
+    {
+      "name": "skill-hifly-avatar-video",
+      "status": "passed"
+    },
+    {
+      "name": "skill-jianying-draft",
+      "status": "passed"
+    },
+    {
+      "name": "skill-live-clip",
+      "status": "passed"
+    },
+    {
+      "name": "python-syntax",
+      "status": "passed"
+    },
+    {
+      "name": "js-daily-energy-calculator-app.js",
+      "status": "passed"
+    },
+    {
+      "name": "js-daily-energy-calculator-calculator.js",
+      "status": "passed"
+    },
+    {
+      "name": "js-ip-operator-knowledge-base-app.js",
+      "status": "passed"
+    },
+    {
+      "name": "js-video-retrospective-app.js",
+      "status": "passed"
+    },
+    {
+      "name": "search-content-topic-planner",
+      "status": "passed"
+    },
+    {
+      "name": "search-results-content-topic-planner",
+      "status": "passed"
+    },
+    {
+      "name": "search-video-opening-coach",
+      "status": "passed"
+    },
+    {
+      "name": "search-results-video-opening-coach",
+      "status": "passed"
+    },
+    {
+      "name": "search-copywriting-coach",
+      "status": "passed"
+    },
+    {
+      "name": "search-results-copywriting-coach",
+      "status": "passed"
+    },
+    {
+      "name": "vibe-plan",
+      "status": "passed"
+    },
+    {
+      "name": "calorie-formulas",
+      "status": "passed"
+    },
+    {
+      "name": "review-structure",
+      "status": "passed"
+    },
+    {
+      "name": "eagle-search",
+      "status": "passed"
+    },
+    {
+      "name": "archive-add-ai-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "archive-list-ai-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "archive-add-fitness-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "archive-list-fitness-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "archive-verify-fitness-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "archive-gallery-fitness-hot-publisher",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-summary",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-srt",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-srt-content",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-encrypt",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-decrypt",
+      "status": "passed"
+    },
+    {
+      "name": "jianying-roundtrip",
+      "status": "passed"
+    },
+    {
+      "name": "clip-pack-help",
+      "status": "passed"
+    },
+    {
+      "name": "clip-audit-help",
+      "status": "passed"
+    },
+    {
+      "name": "clip-pack-dryrun",
+      "status": "passed"
+    },
+    {
+      "name": "dropkit-self-tests",
+      "status": "passed"
+    },
+    {
+      "name": "public-content-scan",
+      "status": "passed"
+    },
+    {
+      "name": "skill-reference-links",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111410"><meta name="description" content="填写身体信息与生活方式，本地估算基础代谢和每日热量消耗。">
+  <title>每日热量消耗计算器</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111410'/%3E%3Cpath d='M18 4 8 18h7l-1 10 10-15h-7z' fill='%23c4f36b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script defer src="calculator.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <header><a class="brand" href="./index.html" aria-label="每日热量消耗计算器首页"><span class="brand-icon" aria-hidden="true">ϟ</span> 每日消耗<span class="brand-en">DAILY ENERGY</span></a><a class="download-link" href="https://liu602112-cpu.github.io/daily-energy-calculator/downloads/daily-energy-calculator.zip" download>下载离线版 <span aria-hidden="true">↓</span></a></header>
+  <main>
+    <div class="intro"><p class="eyebrow">了解身体，从每日消耗开始</p><h1>每日热量消耗计算器<span>。</span></h1><p>三个步骤，估算身体一天需要的能量。</p></div>
+    <ol class="steps" aria-label="计算进度"><li aria-current="step"><span>01</span>身体信息</li><li><span>02</span>生活方式</li><li><span>03</span>消耗结果</li></ol>
+    <div class="workspace">
+      <aside><span class="section-index" id="section-index">01 / 03</span><h2 id="side-title">先认识你的身体</h2><p id="side-copy">基础身体信息，帮助我们估算维持身体正常运转所需的能量。</p><div class="side-note"><span aria-hidden="true">↳</span> 所有计算在你的设备上完成，<br>身体数据不会上传或保存。</div></aside>
+      <section class="panel">
+        <form id="body-form" novalidate>
+          <h2 tabindex="-1">身体信息</h2><p class="panel-lead">填写当前数据，体脂率可以留空。</p>
+          <fieldset><legend>性别</legend><div class="sex-options"><label class="choice"><input type="radio" name="sex" value="male" required><span>男性</span></label><label class="choice"><input type="radio" name="sex" value="female"><span>女性</span></label></div><p class="error" id="sex-error"></p></fieldset>
+          <div class="fields">
+            <div class="field"><label for="age">年龄</label><div class="input-wrap"><input id="age" name="age" type="number" inputmode="numeric" min="18" max="80" step="1" placeholder="18–80" aria-describedby="age-error"><span>岁</span></div><p class="error" id="age-error"></p></div>
+            <div class="field"><label for="height">身高</label><div class="input-wrap"><input id="height" name="height" type="number" inputmode="decimal" min="120" max="230" step="any" placeholder="120–230" aria-describedby="height-error"><span>cm</span></div><p class="error" id="height-error"></p></div>
+            <div class="field"><label for="weight">体重</label><div class="input-wrap"><input id="weight" name="weight" type="number" inputmode="decimal" min="30" max="250" step="any" placeholder="30–250" aria-describedby="weight-error"><span>kg</span></div><p class="error" id="weight-error"></p></div>
+            <div class="field"><label for="bodyFat">体脂率 <span class="optional">选填</span></label><div class="input-wrap"><input id="bodyFat" name="bodyFat" type="number" inputmode="decimal" min="3" max="60" step="any" placeholder="不知道可留空" aria-describedby="bodyFat-error"><span>%</span></div><p class="error" id="bodyFat-error"></p></div>
+          </div>
+          <button class="primary" type="submit">下一步 <span aria-hidden="true">→</span></button>
+        </form>
+        <form id="lifestyle-form" hidden novalidate>
+          <h2 tabindex="-1">生活方式</h2><p class="panel-lead">选择最接近日常状态的选项。</p>
+          <fieldset><legend>工作 / 日常活动类型</legend><div class="work-options">
+            <label class="choice detail"><input type="radio" name="work" value="0"><span><strong>久坐</strong><small>学生、办公室工作者</small></span></label>
+            <label class="choice detail"><input type="radio" name="work" value="1"><span><strong>轻活动</strong><small>教师、销售、经常站立或走动</small></span></label>
+            <label class="choice detail"><input type="radio" name="work" value="2"><span><strong>中等体力</strong><small>餐饮、快递、维修等</small></span></label>
+            <label class="choice detail"><input type="radio" name="work" value="3"><span><strong>重体力</strong><small>建筑、搬运、农业等</small></span></label>
+          </div><p class="error" id="work-error"></p></fieldset>
+          <fieldset><legend>每周运动频率</legend><div class="frequency-options">
+            <label class="choice"><input type="radio" name="frequency" value="0"><span>几乎不运动</span></label><label class="choice"><input type="radio" name="frequency" value="1"><span>每周 1–2 次</span></label><label class="choice"><input type="radio" name="frequency" value="2"><span>每周 3–4 次</span></label><label class="choice"><input type="radio" name="frequency" value="3"><span>每周 5 次以上</span></label>
+          </div><p class="error" id="frequency-error"></p></fieldset>
+          <div class="actions"><button class="secondary" id="back" type="button">上一步</button><button class="primary" type="submit">计算每日消耗 <span aria-hidden="true">→</span></button></div>
+        </form>
+        <section id="result" hidden aria-live="polite">
+          <h2 tabindex="-1">你的每日预计总消耗</h2><div class="total"><strong id="tdee">—</strong><span>kcal / 天</span></div><p class="result-caption">每日总消耗 TDEE</p>
+          <div class="bmr"><span>基础代谢 BMR</span><span><strong id="bmr">—</strong> kcal / 天</span></div>
+          <dl><div><dt>工作类型</dt><dd id="result-work"></dd></div><div><dt>训练频率</dt><dd id="result-frequency"></dd></div><div><dt>活动系数</dt><dd id="factor"></dd></div><div><dt>使用公式</dt><dd id="formula"></dd></div></dl>
+          <p class="notice">该结果为估算值。实际热量消耗受步数、训练强度、工作量、睡眠和个体差异影响。建议结合连续 2–4 周体重变化进行校准。</p>
+          <button class="primary" id="edit" type="button">修改信息，重新计算 <span aria-hidden="true">↗</span></button>
+        </section>
+      </section>
+    </div>
+    <footer><span>适用于 18–80 岁普通成年用户</span><span>不适用于孕妇、疾病患者或专业运动员等特殊人群</span></footer>
+  </main>
+</div>
+</body></html>

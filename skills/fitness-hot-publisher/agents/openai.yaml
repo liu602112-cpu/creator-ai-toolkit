@@ -1,0 +1,4 @@
+interface:
+  display_name: "健身热点发布"
+  short_description: "检索健身热点，核验运动证据，制作小红书五图与公众号，持续积累参考图库"
+  default_prompt: "使用 $fitness-hot-publisher 查找最近的健身热点，并按需要制作小红书和公众号内容。"

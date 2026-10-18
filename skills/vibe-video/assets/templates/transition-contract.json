@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "transitions": [
+    {
+      "id": "T01",
+      "from_shot": null,
+      "to_shot": null,
+      "recipe_id": null,
+      "narrative_reason": "",
+      "reference_range_seconds": null,
+      "start_frame": null,
+      "end_frame": null,
+      "preserved": {"object_ids": [], "anchors": [], "coordinate_space": null, "other": []},
+      "changed": [],
+      "added_information_and_source": [],
+      "event_order": [],
+      "layer_order_back_to_front": [],
+      "camera_continuity": "",
+      "lighting_bridge": null,
+      "label_timing": [],
+      "easing": {"curve": null, "reason": ""},
+      "checkpoints": {"before_frame": null, "middle_frame": null, "after_frame": null, "expected": []},
+      "known_reference_differences": [],
+      "observed_result": null
+    }
+  ]
+}

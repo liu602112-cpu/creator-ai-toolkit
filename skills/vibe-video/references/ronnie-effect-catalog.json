@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "ronnie-coleman-20261009",
+  "source": {
+    "path": "C:\\Users\\Administrator\\Desktop\\健身科普动画\\罗尼库尔曼_最终版.mp4",
+    "sha256": "d9e2e61c70fc60e55b4fdb1b5351a392b3d5301b7ab4352653058cf2f4f733ae",
+    "bytes": 288749925,
+    "frameIndexBase": 0,
+    "videoFrames": 6840,
+    "fps": 30,
+    "videoDuration": 228,
+    "audioDuration": 228.011
+  },
+  "referenceCanvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 6840
+  },
+  "intervalConvention": "[startFrame,endFrameExclusive)",
+  "parameterBoundary": "Measured finished frames and reconstruction starting values; author project/curves unavailable.",
+  "studyFolder": "<本机项目目录>",
+  "effects": [
+    {
+      "id": "RC01",
+      "name": "身份反差快切",
+      "category": "剪辑",
+      "startFrame": 3,
+      "endFrame": 99,
+      "evidence": "警徽→警服训练→舞台，身份大字在不同实景上接力",
+      "construction": "先选能证明两种身份的真实物件/动作，再固定关键词位置；原素材和标签共用切点",
+      "startingParameters": {
+        "labelAnchor": [
+          0.5,
+          0.48
+        ],
+        "typicalCutFrames": [
+          32,
+          32,
+          32
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "两种身份可辨；不要只换词而没有相应画面",
+      "detail": "01-opening",
+      "nativeFrame": 30
+    },
+    {
+      "id": "RC02",
+      "name": "横幅画面与上下黑边",
+      "category": "画幅",
+      "startFrame": 3,
+      "endFrame": 512,
+      "evidence": "片头画面主要位于y=138至941，下方仍有英文字幕",
+      "construction": "素材裁切放进1920×804内容窗；文字独立排在安全区",
+      "startingParameters": {
+        "measuredNativeContentWindow": [
+          0,
+          138,
+          1920,
+          804
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "裁切不截掉关键词，黑边高度与参考一致",
+      "detail": "01-opening",
+      "nativeFrame": 178
+    },
+    {
+      "id": "RC03",
+      "name": "英中文人名分层",
+      "category": "标题",
+      "startFrame": 99,
+      "endFrame": 512,
+      "evidence": "英文大写衬线名、细金线、中文姓名、金色身份短句错峰出现",
+      "construction": "英文先清晰→横线→中文→小身份句；中文与英文分别控制字距",
+      "startingParameters": {
+        "enterFrames": 12,
+        "secondaryDelayFrames": [
+          6,
+          12
+        ],
+        "englishStyle": "serif uppercase",
+        "chineseStyle": "Song-like serif, exact font unknown"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "一镜内层级可读，英文字号不挤出画面",
+      "detail": "04-title",
+      "nativeFrame": 480
+    },
+    {
+      "id": "RC04",
+      "name": "暗金底、颗粒与光晕",
+      "category": "全局包装",
+      "startFrame": 444,
+      "endFrame": 6840,
+      "evidence": "解释镜头有暗边、中间棕金光晕、小颗粒；并非所有片段底色相同",
+      "construction": "深色底→大半径低透明径向光→固定种子颗粒→解释图层→字幕",
+      "startingParameters": {
+        "initialPalette": {
+          "dark": "#100c07",
+          "cream": "#e6ddc8",
+          "gold": "#cfaa53",
+          "red": "#df5543"
+        },
+        "grainOpacity": 0.04
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "颗粒不每帧重抽；光晕不抢小字",
+      "detail": null,
+      "nativeFrame": 3380
+    },
+    {
+      "id": "RC05",
+      "name": "会员卡进入后坐稳",
+      "category": "卡片动画",
+      "startFrame": 162,
+      "endFrame": 227,
+      "evidence": "纸色圆角卡从偏低位置进入，旋转减小后稳定；背景继续动",
+      "construction": "卡片整体上移与短缩放/旋转回正，所有内容共享父级；进入结束后停止漂浮",
+      "startingParameters": {
+        "observedBeigePlaneRotationDeg": -3.95,
+        "suggestedFullCardNative": [
+          860,
+          510
+        ],
+        "settleApproxFrame": 178,
+        "background": "darkened/softened Metroflex footage"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "持有阶段文字不持续漂移；卡面是说明图，不宣称官方原件",
+      "detail": "02-member-card",
+      "nativeFrame": 178
+    },
+    {
+      "id": "RC06",
+      "name": "划价与红色盖章",
+      "category": "状态动画",
+      "startFrame": 196,
+      "endFrame": 227,
+      "evidence": "原会员费被红线划过，FREE/免费红章进入；档案、首胜与退役也复用章形",
+      "construction": "先显示原状态→红线描出→印章从较大缩到正常→保持；章与载体一起运动",
+      "startingParameters": {
+        "stampScale": [
+          1.35,
+          1
+        ],
+        "stampFrames": 7,
+        "strokeFrames": 7,
+        "strokeWidthNative": 4
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "红章可读且位置不盖住姓名；不要当成真实行政文件",
+      "detail": "02-member-card",
+      "nativeFrame": 216
+    },
+    {
+      "id": "RC07",
+      "name": "年份与奖杯接力",
+      "category": "蒙太奇",
+      "startFrame": 258,
+      "endFrame": 366,
+      "evidence": "赛事短片快速换年，奖杯数量累积，后来再出现1999/2000及八冠",
+      "construction": "单份year/asset/win列表驱动画面、字幕、图标；按参考独立记录切点",
+      "startingParameters": {
+        "forwardSectionFrames": [
+          258,
+          366
+        ],
+        "iconCountMaximum": 8
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "同一帧人物、年份、奖杯数量一致",
+      "detail": "03-rewind",
+      "nativeFrame": 300
+    },
+    {
+      "id": "RC08",
+      "name": "倒带语法",
+      "category": "转场",
+      "startFrame": 366,
+      "endFrame": 444,
+      "evidence": "左上REWIND和双左三角；水平扫描条、短拖影、年份倒序切换",
+      "construction": "素材按倒序年份重排→扫描线/横向偏移→拖影短叠层→落到早期段；不据此断言原动作反放",
+      "startingParameters": {
+        "scanlineSpacingNative": 80,
+        "smearFrames": 3,
+        "marker": "◀◀ REWIND"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "年份确实回退，最后落点干净；音效需另试听",
+      "detail": "03-rewind",
+      "nativeFrame": 390
+    },
+    {
+      "id": "RC09",
+      "name": "退景成模糊底再出标题",
+      "category": "转场",
+      "startFrame": 432,
+      "endFrame": 518,
+      "evidence": "原人物退为大幅虚焦底，前景人名成为主读层",
+      "construction": "先降低背景细节与亮度，再让新标题清晰；主体和标题速度独立",
+      "startingParameters": {
+        "backgroundBlurNative": [
+          0,
+          16
+        ],
+        "backgroundDim": [
+          0,
+          0.45
+        ],
+        "transitionFrames": 15
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "背景仍能辨识人物，但读字优先",
+      "detail": "04-title",
+      "nativeFrame": 480
+    },
+    {
+      "id": "RC10",
+      "name": "地图飞入目标州/城市",
+      "category": "相机与图形",
+      "startFrame": 510,
+      "endFrame": 615,
+      "evidence": "美国州界→德州金色→镜头推近→阿灵顿点与文字",
+      "construction": "准确地图路径共享世界坐标；州填色、相机、城市点独立错峰；点标签跟随相机父级",
+      "startingParameters": {
+        "overviewToDetailFrames": 65,
+        "cityLabelDelayFrames": 14,
+        "start": "USA outlines",
+        "end": "Texas/Arlington"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不把屏幕点手填成错误地理位置；移动到位后留读",
+      "detail": "05-map",
+      "nativeFrame": 607
+    },
+    {
+      "id": "RC11",
+      "name": "人物档案逐行填写",
+      "category": "信息动画",
+      "startFrame": 615,
+      "endFrame": 763,
+      "evidence": "奶油纸、黑框照片、姓名出生学历职业按旁白陆续出现，学历金色标记，最后1989入职章",
+      "construction": "纸与照片先落稳→每行内容进入→标记带从左描开→最后盖章",
+      "startingParameters": {
+        "measuredPaperNative": [
+          1081,
+          612
+        ],
+        "measuredPaperAngleDeg": -2.0,
+        "measuredPaperCenterNative": [
+          958,
+          497
+        ],
+        "rowDelaySuggestedFrames": 22
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "行与行信息不互相挤压；纸页是整理信息的示意图",
+      "detail": "06-file",
+      "nativeFrame": 660
+    },
+    {
+      "id": "RC12",
+      "name": "真实素材里的动作与内部切镜",
+      "category": "素材原生运动",
+      "startFrame": 763,
+      "endFrame": 1123,
+      "evidence": "警服、训练、杠铃、办公、招牌并非统一静态照片；原素材含手持/快速运动",
+      "construction": "保存原视频动作；包装层仅负责取景与必要明暗，先判断切镜是否已在素材里",
+      "startingParameters": {
+        "rule": "track raw footage motion separately from compositing motion"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不要把真实视频冻成一张图慢推",
+      "detail": null,
+      "nativeFrame": 952
+    },
+    {
+      "id": "RC13",
+      "name": "人生岔路描线",
+      "category": "解释动画",
+      "startFrame": 1120,
+      "endFrame": 1202,
+      "evidence": "中间竖线长出两条曲线，左警察灰色、右健美金色",
+      "construction": "同一根节点出发，先竖干，再左右曲线，末端文字后出现；右支加强",
+      "startingParameters": {
+        "rootNative": [
+          960,
+          884
+        ],
+        "junctionNative": [
+          960,
+          603
+        ],
+        "endpointsNative": [
+          [
+            530,
+            327
+          ],
+          [
+            1360,
+            327
+          ]
+        ],
+        "drawFrames": 34
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "根连接不断裂；颜色之外标签清楚",
+      "detail": "07-fork",
+      "nativeFrame": 1197
+    },
+    {
+      "id": "RC14",
+      "name": "条件清单换权益",
+      "category": "解释动画",
+      "startFrame": 1508,
+      "endFrame": 1694,
+      "evidence": "两条编号条件、等号、会员卡和免费章形成交易关系",
+      "construction": "条件1→条件2→等号→卡片→划价/盖章；保留足够时间读完整条件",
+      "startingParameters": {
+        "leftColumnNativeX": 135,
+        "cardCenterNativeX": 1300,
+        "conditionStepSuggestedFrames": 26
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不得只显示免费而删掉用户必须付出的条件",
+      "detail": "08-contract",
+      "nativeFrame": 1600
+    },
+    {
+      "id": "RC15",
+      "name": "胜利等级印章接力",
+      "category": "强调",
+      "startFrame": 1694,
+      "endFrame": 1866,
+      "evidence": "重量级冠军→全场冠军→首战即赢，金/红矩形章错峰叠在实际比赛影像",
+      "construction": "按旁白顺序落章，稳定后保持，背景动作继续；大结果最后进入",
+      "startingParameters": {
+        "suggestedStampFrames": 7,
+        "interStampDelayFrames": 18,
+        "emphasisColors": [
+          "gold",
+          "red"
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "每枚章语义独立，章叠不挡脸",
+      "detail": "09-stamps",
+      "nativeFrame": 1850
+    },
+    {
+      "id": "RC16",
+      "name": "三阶路线与远处奖杯",
+      "category": "解释动画",
+      "startFrame": 1905,
+      "endFrame": 2038,
+      "evidence": "1990、1991、1992三条阶梯逐级出现，虚线再到奖杯",
+      "construction": "三条水平路径高度逐增，年份与事件绑定；最后虚线通向更高目标",
+      "startingParameters": {
+        "steps": 3,
+        "stepDrawFrames": 18,
+        "stepDelayFrames": 17,
+        "targetConnector": "dashed"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "地方胜利不直接画成已获得世界冠军",
+      "detail": "10-steps",
+      "nativeFrame": 2004
+    },
+    {
+      "id": "RC17",
+      "name": "真实舞台上的排名名单",
+      "category": "解释叠层",
+      "startFrame": 2208,
+      "endFrame": 2350,
+      "evidence": "舞台仍动，右边列顶尖选手，主角在更低位置突出",
+      "construction": "原视频保持→压暗右侧→名单逐行进入→主角低名次以红色定位",
+      "startingParameters": {
+        "rowsInitial": 6,
+        "rowDelaySuggestedFrames": 4
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "名单与所述届次同源核验；不要把当届名次当终生排名",
+      "detail": null,
+      "nativeFrame": 2310
+    },
+    {
+      "id": "RC18",
+      "name": "名次曲线逐段描出",
+      "category": "数据动画",
+      "startFrame": 2342,
+      "endFrame": 2478,
+      "evidence": "金线按年份走出16、15、11、6、9；1997终点转红并出现第九名",
+      "construction": "单一数据模型同时驱动线段、圆点、年份、值与终点说明，低名次画在更低位置",
+      "startingParameters": {
+        "sourceShownRanks": [
+          [
+            1992,
+            16
+          ],
+          [
+            1994,
+            15
+          ],
+          [
+            1995,
+            11
+          ],
+          [
+            1996,
+            6
+          ],
+          [
+            1997,
+            9
+          ]
+        ],
+        "rankAxis": "1 at top",
+        "lineDrawSuggestedFrames": 90
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "数据未核验；1993未参赛不连成虚构数据点",
+      "detail": "11-rank-line",
+      "nativeFrame": 2460
+    },
+    {
+      "id": "RC19",
+      "name": "已知未来撤回成问号",
+      "category": "叙事动画",
+      "startFrame": 2490,
+      "endFrame": 2754,
+      "evidence": "先虚线延到第一名并排八座奖杯，随后未来层撤去，仅1998问号与1997实绩保留",
+      "construction": "历史实线永不重建；futureOverlay单独显现/退出，unknownMarker之后进入",
+      "startingParameters": {
+        "futureLayer": "dashed path + 8 trophies",
+        "historicalAnchor": [
+          1997,
+          9
+        ],
+        "unknownYear": 1998,
+        "fadeSuggestedFrames": 14
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "撤未来时不删除历史，也不能把虚线未来当已确定预测",
+      "detail": "12-remove-future",
+      "nativeFrame": 2720
+    },
+    {
+      "id": "RC20",
+      "name": "奖杯放射光",
+      "category": "情绪图形",
+      "startFrame": 2804,
+      "endFrame": 2893,
+      "evidence": "平面金色奖杯轮廓，低透明射线从同一中心扩散",
+      "construction": "奖杯先显→后方射线伸展→轻光晕→压暗离场；保留射线中心",
+      "startingParameters": {
+        "rayOriginNormalized": [
+          0.52,
+          0.54
+        ],
+        "rayOpacity": 0.12,
+        "growSuggestedFrames": 18
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "射线只建立目标，不盖住奖杯名称",
+      "detail": "13-trophy",
+      "nativeFrame": 2840
+    },
+    {
+      "id": "RC21",
+      "name": "暗场聚光与王座空缺",
+      "category": "章节停顿",
+      "startFrame": 2970,
+      "endFrame": 3022,
+      "evidence": "黑场向下聚光，中央只出现王座空缺/THE THRONE IS EMPTY文字",
+      "construction": "前景退暗→柔光锥→中央关键词→短停顿；不是王座实体形变",
+      "startingParameters": {
+        "holdSuggestedFrames": 20,
+        "lightOpacity": 0.2
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "停顿有语义，不为每次切景都加暗场",
+      "detail": "14-empty-throne",
+      "nativeFrame": 2978
+    },
+    {
+      "id": "RC22",
+      "name": "前五目标空槽",
+      "category": "解释动画",
+      "startFrame": 3120,
+      "endFrame": 3205,
+      "evidence": "右侧1至5空格，只有第五格金边和罗尼姓名带问号；左大字前五",
+      "construction": "空槽先建立→序号→第五格亮起→姓名/问号，背景赛事虚焦保留",
+      "startingParameters": {
+        "rows": 5,
+        "highlightIndex": 4,
+        "unknownMarker": true
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "明确这是目标，不冒充实际赛果",
+      "detail": "15-top-five",
+      "nativeFrame": 3150
+    },
+    {
+      "id": "RC23",
+      "name": "人物引荐链",
+      "category": "关系动画",
+      "startFrame": 3250,
+      "endFrame": 3419,
+      "evidence": "惠勒圆头像→红色引荐箭头→教练通用轮廓→金色备赛指导箭头→罗尼头像",
+      "construction": "先A，再A→B和B，再B→C和C；头像裁切、环、姓名绑定节点ID",
+      "startingParameters": {
+        "measuredCentersNative": [
+          [
+            410,
+            426
+          ],
+          [
+            960,
+            426
+          ],
+          [
+            1510,
+            426
+          ]
+        ],
+        "approxDiameterNative": 232,
+        "edgeSemantics": [
+          "引荐",
+          "备赛指导"
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "无确证头像时用明确示意轮廓，不能拿错人物照片",
+      "detail": "16-relationships",
+      "nativeFrame": 3380
+    },
+    {
+      "id": "RC24",
+      "name": "备赛清单勾选",
+      "category": "操作动画",
+      "startFrame": 3420,
+      "endFrame": 3575,
+      "evidence": "饮食、有氧、备赛安排三个红勾逐项出现，纸页坐稳",
+      "construction": "每项先文字→框→短线勾→长线勾；按实际句子顺序，不整页同时闪现",
+      "startingParameters": {
+        "items": 3,
+        "checkDrawSuggestedFrames": 7,
+        "itemDelaySuggestedFrames": 28
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "动画可清楚指出到底改变了哪三项",
+      "detail": "17-checklist",
+      "nativeFrame": 3510
+    },
+    {
+      "id": "RC25",
+      "name": "划旧状态进入专业指导",
+      "category": "状态动画",
+      "startFrame": 3520,
+      "endFrame": 3650,
+      "evidence": "自己摸索灰字被红线划掉，向下金箭头，专业指导变大变金",
+      "construction": "旧状态→红删除线→箭头描出→新状态；清单纸页保留",
+      "startingParameters": {
+        "oldNewNormalizedY": [
+          0.43,
+          0.62
+        ],
+        "strikeSuggestedFrames": 8
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "变化顺序和旁白一致，不用只有两个互换标签",
+      "detail": "17-checklist",
+      "nativeFrame": 3550
+    },
+    {
+      "id": "RC26",
+      "name": "24小时作息条",
+      "category": "数据动画",
+      "startFrame": 3650,
+      "endFrame": 3882,
+      "evidence": "0至24轴，训练标在上班前；15时到岗红字、23时下班金字，执勤蓝红渐变段",
+      "construction": "先时间轴→训练位置→15端点→执勤条从15延到23→23端点",
+      "startingParameters": {
+        "axisDomain": [
+          0,
+          24
+        ],
+        "dutyHours": [
+          15,
+          23
+        ],
+        "trainingDuration": "unknown, only before shift",
+        "nativeAxisX": [
+          246,
+          1674
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不要把上班前整段误写为训练15小时",
+      "detail": "18-clock",
+      "nativeFrame": 3880
+    },
+    {
+      "id": "RC27",
+      "name": "第九到第一的弧线",
+      "category": "对照动画",
+      "startFrame": 4270,
+      "endFrame": 4368,
+      "evidence": "现场反应影像上，左红9/1997，金弧指向右金1/1998",
+      "construction": "左数字先读→弧线从左描出→右数字出现；原人物反应仍完整",
+      "startingParameters": {
+        "labelXNormalized": [
+          0.19,
+          0.76
+        ],
+        "arcDrawSuggestedFrames": 20,
+        "deltaYears": 1
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "弧线端点与数字锚点对应；不把原人物反应替换成空白海报",
+      "detail": "19-nine-to-one",
+      "nativeFrame": 4320
+    },
+    {
+      "id": "RC28",
+      "name": "冠军名单滚动与高亮",
+      "category": "信息动画",
+      "startFrame": 4610,
+      "endFrame": 4709,
+      "evidence": "历年冠军名单向上移动，相同RONNIE COLEMAN逐年进入高亮带，之前名字变暗",
+      "construction": "单份year/name列表驱动，scrollOffset帧驱动；活动行随高亮条切换",
+      "startingParameters": {
+        "highlightBandNormalizedY": [
+          0.45,
+          0.65
+        ],
+        "lineHeightSuggestedNative": 62
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不能只做长文字截图滚动而无法核对每一行",
+      "detail": "20-honour-roll",
+      "nativeFrame": 4660
+    },
+    {
+      "id": "RC29",
+      "name": "双栏八等于八",
+      "category": "对照动画",
+      "startFrame": 4804,
+      "endFrame": 4869,
+      "evidence": "李哈尼与罗尼分栏，中央8=8，下面姓名与夺冠区间",
+      "construction": "两栏保持真实运动→各自标签→中央等式；数字来自同一比较数据",
+      "startingParameters": {
+        "splitNormalizedX": 0.5,
+        "comparison": "title count, not physique ranking"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "比较的是冠军数量，不能换成力量或体型胜负",
+      "detail": "21-eight-equal",
+      "nativeFrame": 4810
+    },
+    {
+      "id": "RC30",
+      "name": "重量和次数跟动作",
+      "category": "动作计数",
+      "startFrame": 5000,
+      "endFrame": 5135,
+      "evidence": "重量数滚到800磅、次数×1再×2，后出现约363公斤；主体继续真实深蹲",
+      "construction": "重量只在介绍时滚一次；repCount由完整动作结束事件驱动，公斤说明最后补",
+      "startingParameters": {
+        "targetPounds": 800,
+        "sourceShownKg": 363,
+        "weightAnchorNormalized": [
+          0.15,
+          0.35
+        ],
+        "repAnchorNormalized": [
+          0.86,
+          0.35
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "只在完整一次动作后加一；单位字不随数值错跳",
+      "detail": "22-squat-count",
+      "nativeFrame": 5120
+    },
+    {
+      "id": "RC31",
+      "name": "训练/舞台动态双栏",
+      "category": "对照转场",
+      "startFrame": 5298,
+      "endFrame": 5418,
+      "evidence": "左训练右舞台，固定竖分隔，顶上各自双语标签；两侧动作继续",
+      "construction": "左右视频各自父级裁切→分隔→标签，退出按整体或指定一栏切出",
+      "startingParameters": {
+        "splitNormalizedX": 0.5,
+        "bothSidesVideo": true
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不把训练力量图示成比赛评分指标",
+      "detail": "23-split",
+      "nativeFrame": 5330
+    },
+    {
+      "id": "RC32",
+      "name": "备赛上台结果链",
+      "category": "流程动画",
+      "startFrame": 5540,
+      "endFrame": 5648,
+      "evidence": "三框备赛→上台→结果，最后结果框金色，×8年说明复现次数",
+      "construction": "框1→连线→框2→连线→框3→金色强调→循环次数；原舞台影像压暗在后",
+      "startingParameters": {
+        "nodes": [
+          "备赛",
+          "上台",
+          "结果"
+        ],
+        "nodeDelaySuggestedFrames": 15
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "重复次数有依据；箭头表示流程而非万能因果",
+      "detail": "24-process",
+      "nativeFrame": 5620
+    },
+    {
+      "id": "RC33",
+      "name": "深色数据场到纸面复盘",
+      "category": "转场与数据",
+      "startFrame": 5648,
+      "endFrame": 6070,
+      "evidence": "切到亮米白纸面，重描同样名次曲线，红虚线框1997至1998，再逐张摆方法标签",
+      "construction": "沿用排名数据与坐标语义→换纸底及深色线→红框→逐项方法卡片；不是两幅无关数据图",
+      "startingParameters": {
+        "methodTags": [
+          "训练多年",
+          "职业选手",
+          "继续参赛",
+          "接受帮助",
+          "改变方法"
+        ],
+        "focusYears": [
+          1997,
+          1998
+        ],
+        "paperPalette": [
+          "#e7ddc2",
+          "#4c3825",
+          "#ad4838"
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "曲线重画后的年份与名次一致；红框不能画成已经量化的单因解释",
+      "detail": "25-paper-graph",
+      "nativeFrame": 5825
+    },
+    {
+      "id": "RC34",
+      "name": "开头卡片回收与年数增长",
+      "category": "叙事闭环",
+      "startFrame": 6220,
+      "endFrame": 6410,
+      "evidence": "FREE卡再次出现，对比第一次比赛，再切八冠背景；中央年数从小数值增长到15",
+      "construction": "复用同一卡片设计与原动机；数字更新、年份区间和奖杯组共享数据",
+      "startingParameters": {
+        "yearsShownRange": [
+          1990,
+          2005
+        ],
+        "finalElapsedYears": 15
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "15是时间差，不是15次冠军；结尾多一层意义",
+      "detail": "29-year-counter",
+      "nativeFrame": 6360
+    },
+    {
+      "id": "RC35",
+      "name": "灰度人物动底结束卡",
+      "category": "结束动画",
+      "startFrame": 6590,
+      "endFrame": 6840,
+      "evidence": "彩色人物退为灰度暗底，中央小奖杯、英文名、中文名、金色身份行；背景仍有动作，尾部整体淡至近黑",
+      "construction": "灰度/暗化→图标→姓名→身份→留读→整体淡出；淡出期间原素材继续运动",
+      "startingParameters": {
+        "endCardFrames": [
+          6595,
+          6840
+        ],
+        "backgroundMotionContinues": true,
+        "measuredApproxFadeFrames": [
+          6800,
+          6836
+        ],
+        "lastFrameNearBlack": true
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "淡出只在原有末尾范围内，不因时间线提前制造额外留黑",
+      "detail": "30-end-card",
+      "nativeFrame": 6690
+    },
+    {
+      "id": "RC36",
+      "name": "局部柔化区域",
+      "category": "条件包装",
+      "startFrame": 763,
+      "endFrame": 6595,
+      "evidence": "部分比赛画面裆部或服装区有局部柔化，原片已含；仅能确认可见结果",
+      "construction": "若复刻区间需要，逐人物独立定位局部软遮罩并跟随；同时保护字幕",
+      "startingParameters": {
+        "applyOnlyWhenNeeded": true,
+        "algorithm": "not inferable from finished video"
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "避免遮住整条腿；烘焙字幕不逐帧硬阈值抠字",
+      "detail": null,
+      "nativeFrame": 5310
+    },
+    {
+      "id": "RC37",
+      "name": "逐字清晰、关键词线与双语错峰",
+      "category": "字幕动画",
+      "startFrame": 3,
+      "endFrame": 6595,
+      "evidence": "中文左至右从虚到实，重点金/红字配下划线；英文斜体暗灰位于下一行，两条细线围金色菱形",
+      "construction": "文字保持固定排版；各字仅改变opacity/blur，小量垂直位移可选；下划线独立描出；退出粒子须固定种子",
+      "startingParameters": {
+        "approxChineseBaselineNativeY": 936,
+        "approxEnglishBaselineNativeY": 1004,
+        "keywordColors": [
+          "gold",
+          "red"
+        ],
+        "exactFont": "unknown",
+        "suggestedCharDelayFrames": 1
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不因关键词变色改变行宽；粒子不在持有期抖动",
+      "detail": null,
+      "nativeFrame": 660
+    },
+    {
+      "id": "RC38",
+      "name": "短叠化、退暗、横向拖影与暖光桥",
+      "category": "转场家族",
+      "startFrame": 0,
+      "endFrame": 6840,
+      "evidence": "真实影像之间多干净切；章节切换会短重叠/退暗，倒带及部分快速段有横拖，光桥只出现在部分节点",
+      "construction": "为每次切换独立选择；记录A最后清晰帧、混合期、B首次稳定帧，不能给全片统一光闪",
+      "startingParameters": {
+        "initialDissolveFrames": [
+          8,
+          16
+        ],
+        "initialDarkGapFrames": [
+          3,
+          8
+        ],
+        "initialSmearFrames": [
+          2,
+          5
+        ],
+        "initialLightBridgeFrames": [
+          10,
+          24
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不宣称所有相近构图都是形变；原素材自身推拉和拖影单独登记",
+      "detail": null,
+      "nativeFrame": 1410
+    },
+    {
+      "id": "RC39",
+      "name": "静态图取景与真实动景区分",
+      "category": "素材/相机",
+      "startFrame": 0,
+      "endFrame": 6840,
+      "evidence": "照片的缓慢取景、真实视频的摆姿、移动摄影及包装图层运动同时存在",
+      "construction": "给各层独立motionOwner：source/camera/graphic/text；轨迹只加在需要的层",
+      "startingParameters": {
+        "motionOwner": [
+          "source footage",
+          "composition camera",
+          "overlay graphic",
+          "caption"
+        ]
+      },
+      "parameterStatus": "Reconstruction starting values unless specifically marked measured; author settings unknown",
+      "acceptance": "不要把原片运动再叠一次、把旧片压缩噪点当成必须模拟的粒子",
+      "detail": null,
+      "nativeFrame": 5470
+    }
+  ],
+  "limitations": [
+    "Original author project, isolated media, exact fonts, masks and easing functions unavailable.",
+    "Every frame decoded and saved; visual interpretation uses overview, native anchors and selected dense mechanism windows, not a claim that all 6840 individual images were manually judged.",
+    "Speech locally transcribed; sound effect identity/music/instrumentation not listened to because current audio-input tool does not support audio perception.",
+    "Historical and training claims are recorded as source content, not independently verified."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Plan an original biography using selected Ronnie reference mechanisms; fields are inputs, not a completed script.",
+  "subject": "",
+  "source_reference_id": "ronnie-coleman-20261009",
+  "small_motive_or_object": "",
+  "opening_identity": "",
+  "resulting_identity": "",
+  "central_uncertain_moment": "",
+  "what_changed_in_method": [],
+  "chapters": [
+    {"id": "B1", "job": "具体身份反差与小动机", "evidence": [], "selected_mechanisms": ["RC01", "RC05"], "start_frame": null, "end_frame": null},
+    {"id": "B2", "job": "为什么开始，付出什么条件", "evidence": [], "selected_mechanisms": ["RC11", "RC14"], "start_frame": null, "end_frame": null},
+    {"id": "B3", "job": "进步、阻力与当时未知的结果", "evidence": [], "selected_mechanisms": ["RC18", "RC19"], "start_frame": null, "end_frame": null},
+    {"id": "B4", "job": "真实帮助、具体方法变化与生活约束", "evidence": [], "selected_mechanisms": ["RC23", "RC24", "RC26"], "start_frame": null, "end_frame": null},
+    {"id": "B5", "job": "让观众先看真实结果，再总结", "evidence": [], "selected_mechanisms": ["RC27", "RC28"], "start_frame": null, "end_frame": null},
+    {"id": "B6", "job": "过程能力与最终评价分清", "evidence": [], "selected_mechanisms": ["RC31", "RC32"], "start_frame": null, "end_frame": null},
+    {"id": "B7", "job": "回看关键转折，而非虚构单一成功原因", "evidence": [], "selected_mechanisms": ["RC33"], "start_frame": null, "end_frame": null},
+    {"id": "B8", "job": "开头物件或身份获得新含义", "evidence": [], "selected_mechanisms": ["RC34", "RC35"], "start_frame": null, "end_frame": null}
+  ],
+  "adaptation_rule": "Keep only stages supported by the new subject; do not enforce eight chapters or reuse Ronnie facts.",
+  "claims_pending_verification": [],
+  "audio_listening_verified": false
+}

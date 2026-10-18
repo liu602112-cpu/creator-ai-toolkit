@@ -1,0 +1,185 @@
+{
+ "_说明": "重点字样式预设：从喂鱼的剪映草稿「重点字」导出的两条文本（中文猴尊宋体 + 英文 Cherolina）及其入场动画。jy_pack 找不到 style_draft 草稿时用这份。路径里的 ~ 运行时换成当前用户目录。",
+ "materials": {
+  "texts": [
+   {
+    "id": "F2B91678-639B-47CB-B196-C0449C0AFA8D",
+    "type": "text",
+    "content": "{\"styles\":[{\"fill\":{\"content\":{\"gradient\":{\"mode\":\"all\",\"angle\":0,\"percent\":[0,1],\"alpha\":[1,1],\"color\":[[1,1,1],[1,0.972549021244049,0.69411766529083252]]},\"render_type\":\"gradient\"}},\"range\":[0,3],\"shadows\":[{\"thickness_projection_distance\":0,\"diffuse\":0.013562500476837158,\"angle\":-45,\"thickness_projection_enable\":false,\"content\":{\"solid\":{\"color\":[0,0,0]},\"render_type\":\"solid\"},\"distance\":4.9999995231628418,\"thickness_projection_angle\":-45,\"alpha\":0.645468771457672}],\"useLetterColor\":true,\"size\":15,\"font\":{\"path\":\"~/Library/Fonts/猴尊宋体.ttf\",\"id\":\"\"}}],\"text\":\"重点字\"}",
+    "words": {},
+    "current_words": {},
+    "combo_info": {},
+    "caption_template_info": {
+     "resource_id": "",
+     "path": ""
+    },
+    "layer_weight": 1,
+    "line_spacing": 0.02,
+    "has_shadow": true,
+    "shadow_color": "#000000",
+    "shadow_alpha": 0.6454687714576721,
+    "shadow_smoothing": 0.24412500858306885,
+    "shadow_distance": 5.0,
+    "shadow_point": {
+     "x": 0.6363961030678928,
+     "y": -0.6363961030678927
+    },
+    "shadow_angle": -45.0,
+    "border_width": 0.08,
+    "text_color": "#FFFFFF",
+    "font_path": "~/Library/Fonts/猴尊宋体.ttf",
+    "initial_scale": 1.0,
+    "use_effect_default_color": false,
+    "check_flag": 39,
+    "force_apply_line_max_width": true,
+    "lyrics_template": {
+     "resource_id": "",
+     "path": ""
+    }
+   },
+   {
+    "id": "71F44458-0F86-45C2-B649-881ABC0D3FFE",
+    "type": "text",
+    "content": "{\"styles\":[{\"fill\":{\"content\":{\"solid\":{\"color\":[0.83529412746429443,0.239215686917305,0.239215686917305]},\"render_type\":\"solid\"}},\"range\":[0,3],\"useLetterColor\":true,\"size\":15,\"font\":{\"path\":\"~/Library/Fonts/猴尊宋体.ttf\",\"id\":\"\"}}],\"text\":\"重点字\"}",
+    "words": {},
+    "current_words": {},
+    "combo_info": {},
+    "caption_template_info": {
+     "resource_id": "",
+     "path": ""
+    },
+    "layer_weight": 1,
+    "line_spacing": 0.02,
+    "shadow_color": "#000000",
+    "shadow_alpha": 0.8999999761581421,
+    "shadow_smoothing": 0.45000001788139343,
+    "shadow_distance": 5.0,
+    "shadow_point": {
+     "x": 0.6363961030678928,
+     "y": -0.6363961030678927
+    },
+    "shadow_angle": -45.0,
+    "border_width": 0.08,
+    "text_color": "#d53d3d",
+    "font_path": "~/Library/Fonts/猴尊宋体.ttf",
+    "initial_scale": 1.0,
+    "use_effect_default_color": false,
+    "force_apply_line_max_width": true,
+    "lyrics_template": {
+     "resource_id": "",
+     "path": ""
+    }
+   }
+  ],
+  "material_animations": [
+   {
+    "id": "93F4D9C3-BEAC-4E53-84E5-F38F2C19234D",
+    "type": "sticker_animation",
+    "animations": [
+     {
+      "id": "7089261793406620197",
+      "type": "in",
+      "duration": 700000,
+      "path": "~/Movies/JianyingPro/User Data/Cache/effect/7089261793406620197/64d02591440653f6e72c4019f6695af1",
+      "resource_id": "7089261793406620197",
+      "third_resource_id": "7089261793406620197",
+      "source_platform": 1,
+      "name": "扭曲模糊",
+      "category_id": "ruchang_fav",
+      "category_name": "收藏",
+      "material_type": "sticker"
+     }
+    ]
+   },
+   {
+    "id": "3D9E6F64-AA3B-4F2E-B025-4F387A75F5CC",
+    "type": "sticker_animation",
+    "animations": [
+     {
+      "id": "7089261793406620197",
+      "type": "in",
+      "duration": 700000,
+      "path": "~/Movies/JianyingPro/User Data/Cache/effect/7089261793406620197/64d02591440653f6e72c4019f6695af1",
+      "resource_id": "7089261793406620197",
+      "third_resource_id": "7089261793406620197",
+      "source_platform": 1,
+      "name": "扭曲模糊",
+      "category_id": "ruchang_fav",
+      "category_name": "收藏",
+      "material_type": "sticker"
+     }
+    ]
+   }
+  ]
+ },
+ "tracks": [
+  {
+   "type": "text",
+   "segments": [
+    {
+     "id": "6215DC53-1CEC-48CE-9FB5-209B49DAF6BF",
+     "target_timerange": {
+      "duration": 3000000
+     },
+     "render_timerange": {},
+     "clip": {
+      "scale": {
+       "x": 2.3670976117599496,
+       "y": 2.3670976117599496
+      },
+      "transform": {
+       "x": 0.0,
+       "y": -0.270935960591133
+      },
+      "flip": {}
+     },
+     "uniform_scale": {},
+     "material_id": "F2B91678-639B-47CB-B196-C0449C0AFA8D",
+     "extra_material_refs": [
+      "93F4D9C3-BEAC-4E53-84E5-F38F2C19234D"
+     ],
+     "render_index": 14000,
+     "enable_lut": false,
+     "enable_adjust": false,
+     "enable_hsl": false,
+     "track_render_index": 1,
+     "responsive_layout": {},
+     "enable_adjust_mask": false,
+     "source": "segmentsourcenormal"
+    },
+    {
+     "id": "C8F68D9D-7973-4BB0-ADBD-4A463F949403",
+     "target_timerange": {
+      "start": 3000000,
+      "duration": 3000000
+     },
+     "render_timerange": {},
+     "clip": {
+      "scale": {
+       "x": 2.3670976117599496,
+       "y": 2.3670976117599496
+      },
+      "transform": {
+       "x": -0.46129679694139814,
+       "y": -0.1143599415340868
+      },
+      "flip": {}
+     },
+     "uniform_scale": {},
+     "material_id": "71F44458-0F86-45C2-B649-881ABC0D3FFE",
+     "extra_material_refs": [
+      "3D9E6F64-AA3B-4F2E-B025-4F387A75F5CC"
+     ],
+     "render_index": 14000,
+     "enable_lut": false,
+     "enable_adjust": false,
+     "enable_hsl": false,
+     "track_render_index": 1,
+     "responsive_layout": {},
+     "enable_adjust_mask": false,
+     "source": "segmentsourcenormal"
+    }
+   ]
+  }
+ ]
+}
